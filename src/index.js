@@ -80,5 +80,6 @@ export {
   displayRamens,
   addSubmitListener,
   handleClick,
+  handleSubmit,
   main,
 };
