@@ -49,7 +49,7 @@ const displayRamen = (ramenObj) => {
   const ramenImg = document.createElement("img");
   ramenImg.src = ramenObj.image;
   ramenImg.alt = ramenObj.name;
-  ramenImg.addEventListener('click', (event) => handleClick(ramenObj, event));
+  ramenImg.addEventListener('click', () => handleClick(ramenObj));
   ramenMenu.appendChild(ramenImg);
 }
 
