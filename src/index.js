@@ -38,7 +38,16 @@ const handleSubmit = (e) => {
   }
   ramenForm.reset()
   displayRamen(newRamen)
+  fetch(url,{
+    method: 'POST',
+    headers: {
+      'Content-Type': "application/json"
+    },
+    body:JSON.stringify(newRamen)
+  })
+  .catch(error => alert(error))
 }
+
 
 const addSubmitListener = () => {
   // Add code
